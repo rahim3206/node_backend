@@ -1,0 +1,27 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "This is practice Backend App",
+  "main": "inde .js",
+  "type": "module",
+  "scripts": {
+    " ": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "js",
+    "express"
+  ],
+  "author": "Muhammad Rahim",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "mongoose-aggregate-paginate-v2": "^1.0.7"
+  }
+}
