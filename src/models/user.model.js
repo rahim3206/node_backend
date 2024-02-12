@@ -27,11 +27,11 @@ const userSchema = new Schema({
         index: true
     },
     avatar: {
-        type: String, // cloudinary url
+        type: String,
         required: true,
     },
     coverImage: {
-        type: String, // cloudinary url
+        type: String,
     },
     watchHistory: [
         {
@@ -61,7 +61,7 @@ userSchema.methods.isPasswordCorrect = async function (password) {
  }
 
 userSchema.methods.generateAccessToken = function () {
-    jwt.sign(
+    Jwt.sign(
         {
             _id:this._id,
             email:this.email,
@@ -75,7 +75,7 @@ userSchema.methods.generateAccessToken = function () {
     )
 }
 userSchema.methods.generateRefreshToken = function () {
-    jwt.sign(
+    Jwt.sign(
         {
             _id:this._id
         },
